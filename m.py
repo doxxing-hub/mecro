@@ -489,5 +489,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = AutoClickerGUI(root)
     root.mainloop()
-
-input("\nPress Enter to Exit")
